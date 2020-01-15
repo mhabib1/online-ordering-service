@@ -1,0 +1,1 @@
+document.getElementById("text").onclick=function(){var e=!0;if(!0){var t=document.createElement("div");t.className="new-rect",document.getElementsByTagName("body")[0].appendChild(t)}};

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Oswald:200,300,400,500,600,700" rel="stylesheet">
+  <script src="js/diner.js"></script>
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <script type="text/javascript">
+        $(function() {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+      </script>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-default animated bounceInLeft " role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+        <div class="navbar-brand navbar-brand-centered">36 | Diner</div>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-brand-centered">
+        <ul class="nav navbar-nav">
+          <li><a href="#"> <span class="glyphicon glyphicon-home"></span> Home</a></li>
+          <li><a href="#"> <span class="glyphicon glyphicon-flag"></span> Order</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"> <span class="glyphicon glyphicon-question-sign"></span> About Us</a></li>
+          <li><a href="#"> <span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+
+  <!-- Main -->
+  <div class="row">
+
+    <!-- Left Panel -->
+    <div class="leftPanel col-sm-3 col-md-3 animated bounceInLeft">
+      <!-- Our Menu Title -->
+      <div id="menuTitle">
+        <h3><span class="glyphicon glyphicon-cutlery"></span> Our Menu</h3>
+      </div>
+      <!-- Menu Options -->
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Foods</a>
+                     </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+              <!-- Burger Dip -->
+              <div class="entry">
+                <button class="tablinks menuItem" onclick="openCity(event, 'gb')">Burger Dip <span class="badge">$18.99</span></button>
+                <button type="button" class="addItem btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="Tooltip on top"><span class="glyphicon glyphicon-plus"></span></button>
+              </div>
+              <!-- Burger Dip -->
+              <div class="entry">
+                <button class="tablinks menuItem" onclick="openCity(event, 'gb')">Turkish Eggs <span class="badge">$9.99</span></button>
+                <button type="button" class="addItem btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"></span></button>
+              </div>
+              <!-- Burger Dip -->
+              <div class="entry">
+                <button class="tablinks menuItem" onclick="openCity(event, 'gb')">Duck Chilaquiles <span class="badge">$16.57</span></button>
+                <button type="button" class="addItem btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"></span></button>
+              </div>
+              <!-- Burger Dip -->
+              <div class="entry">
+                <button class="tablinks menuItem" onclick="openCity(event, 'gb')">Smoked Arctic Char <span class="badge">$19.99</span></button>
+                <button type="button" class="addItem btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Drinks</a>
+                     </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+              <!-- Passionfruit Margarita -->
+              <div class="entry">
+                <button class="tablinks menuItem" onclick="openCity(event, 'gb')">Passionfruit Margarita <span class="badge">$9.99</span></button>
+                <button type="button" class="addItem btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"></span></button>
+              </div>
+              <!-- Caesar -->
+              <div class="entry">
+                <button class="tablinks menuItem" onclick="openCity(event, 'gb')">Caesar <span class="badge">$12.44</span></button>
+                <button type="button" class="addItem btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"></span></button>
+              </div>
+              <!-- Morning Helper -->
+              <div class="entry">
+                <button class="tablinks menuItem" onclick="openCity(event, 'gb')">Morning Helper <span class="badge">$12.99</span></button>
+                <button type="button" class="addItem btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Desserts</a>
+                     </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse">
+            <div class="panel-body">
+              <!-- Passionfruit Margarita -->
+              <div class="entry">
+                <button class="tablinks menuItem" onclick="openCity(event, 'gb')">Chocolate Explosion <span class="badge">$14.99</span></button>
+                <button type="button" class="addItem btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"></span></button>
+              </div>
+              <!-- Caesar -->
+              <div class="entry">
+                <button class="tablinks menuItem" onclick="openCity(event, 'gb')">Red Velvet Cheese Cake <span class="badge">$12.99</span></button>
+                <button type="button" class="addItem btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"></span></button>
+              </div>
+              <!-- Morning Helper -->
+              <div class="entry">
+                <button class="tablinks menuItem" onclick="openCity(event, 'gb')">Brownie Addiction <span class="badge">$8.99</span></button>
+                <button type="button" class="addItem btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Our Order Title -->
+      <div id="menuTitle">
+        <h3><span class="glyphicon glyphicon-file"></span> Your Order</h3>
+        <p style="color: #a9a9a9; padding-top: 10px; font-weight: 100; font-size: 13px; margin-bottom: 21px;">Please select items from our menu</p>
+        <h4 style="font-weight:400;">YOUR TOTAL: <span style="font-size: 15px; font-weight:100;" class="fa fa-dollar"></span>0</h4>
+      </div>
+      <div class="endButtons">
+        <button type="button" class="payOrder btn btn-default">
+               Request Bill
+               </button>
+        <button type="button" class="cancelOrder btn btn-default" data-toggle="modal" data-target="#memberModal">
+               Additional Instructions
+               </button>
+        <button type="button" class="cancelOrder btn btn-default">
+               Cancel
+               </button>
+        <button type="button" class="cancelOrder btn btn-default" onclick="alert('A waiter will be there soon')">
+                      Help!
+                      </button>
+      </div>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="rightPanel col-sm-9 col-md-9 animated bounceInUp">
+
+      <!-- Burger Dip -->
+      <div id="#" class="displayHead jumbotron mt-3">
+        <div class="thumbnail text-center" style="background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url('https://images.unsplash.com/photo-1477617722074-45613a51bf6d?auto=format&fit=crop&w=2850&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D') no-repeat center center fixed;">
+          <div class="caption">
+            <h1 class="animated flipInY">Burger Dip</h1>
+            <hr>
+            <p>Welcome to Good Burger, home of the Good Burger! Can I take your order?</p>
+          </div>
+        </div>
+        <div class="ingredients">
+          <h2 style="font-weight:300; color: #c03a2c;">Ingredients</h2>
+          <ul>
+            <li>Caramelized Onion</li>
+            <li>Jalapeño & Cheddar Aioli</li>
+            <li>Pickled Onions</li>
+            <li>Oxtail Jus</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!-- USE THIS AS YOUR TEMPLATE ON THE RIGHT SIDE -->
+      <!----><div id="#" class="displayHead jumbotron mt-3">
+               <div class="thumbnail text-center">
+                  <img background-image:url('../images/tke.jpeg') alt="" class="img-responsive">
+                  <div class="caption">
+                     <h1 class="animated flipInY">Turkish Eggs</h1>
+                     <hr>
+                     <p>Yummy Turkish Eggs</p>
+                  </div>
+               </div>
+               <div class="ingredients">
+                  <h2 style="font-weight:300">Ingredients</h2>
+                  <ul>
+                     <li>Caramelized Onion</li>
+                     <li>Jalapeño & Cheddar Aioli</li>
+                     <li>Pickled Onions</li>
+                     <li>Oxtail Jus</li>
+                  </ul>
+               </div>
+            </div>
+             <!---->
+
+             <!---->
+             <div id="#" class="displayHead jumbotron mt-3">
+                      <div class="thumbnail text-center">
+                         <img background-image:url('../images/dc.jpeg') alt="" class="img-responsive">
+                         <div class="caption">
+                            <h1 class="animated flipInY">Duck Chilaquiles</h1>
+                            <hr>
+                            <p>Yummy Turkish Eggs</p>
+                         </div>
+                      </div>
+                      <div class="ingredients">
+                         <h2 style="font-weight:300">Ingredients</h2>
+                         <ul>
+                            <li>Caramelized Onion</li>
+                            <li>Jalapeño & Cheddar Aioli</li>
+                            <li>Pickled Onions</li>
+                            <li>Oxtail Jus</li>
+                         </ul>
+                      </div>
+                   </div>
+                    <!---->
+
+            <!---->
+            <div id="#" class="displayHead jumbotron mt-3">
+              <div class="thumbnail text-center">
+                <img background-image:url('../images/sac.jpeg') alt="" class="img-responsive">
+                <div class="caption">
+                  <h1 class="animated flipInY">Smoked Arctic Char</h1>
+                  <hr>
+                  <p>Yummy Turkish Eggs</p>
+                </div>
+              </div>
+            <div class="ingredients">
+              <h2 style="font-weight:300">Ingredients</h2>
+                <ul>
+                  <li>Caramelized Onion</li>
+                  <li>Jalapeño & Cheddar Aioli</li>
+                  <li>Pickled Onions</li>
+                  <li>Oxtail Jus</li>
+                </ul>
+             </div>
+            </div>
+           <!---->
+
+
+    </div>
+
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="memberModal" tabindex="-1" role="dialog" aria-labelledby="memberModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modalBox modal-content">
+        <div class="modal-header">
+          <h2 id="aITitle"> Additional Requests on the Order</h2>
+          <p id="aIHeading">Please indicate below if you have any special requests.</p>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="noBR btn btn-danger" data-dismiss="modal">Cancel</button>
+          <button type="button" class="noBR btn btn-primary" data-dismiss="modal">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#memberModal').modal('show');
+    });
+  </script>
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>
